@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broup Manutenções!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="assets/broup.png" alt="Broup Logo">
+                <span>BROUP</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#services" class="nav-link">Serviços</a></li>
+                <li><a href="#why-us" class="nav-link">Por Que Escolher</a></li>
+                <li><a href="#stats" class="nav-link">Números</a></li>
+                <li><a href="#location" class="nav-link">Localização</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-in">
+                <i class="fas fa-award"></i>
+                <span>15 Anos de Excelência</span>
+            </div>
+            <h1 class="hero-title animate-fade-in-delay">Soluções Completas em Manutenção</h1>
+            <p class="hero-subtitle animate-fade-in-delay-2">Excelência técnica, segurança e atendimento de alto padrão para residências e empresas em toda região de Campinas</p>
+            <div class="hero-features animate-fade-in-delay-3">
+                <div class="hero-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Atendimento 24/7</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Profissionais Certificados</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Garantia de Serviço</span>
+                </div>
+            </div>
+            <div class="hero-buttons animate-fade-in-delay-4">
+                <button class="btn btn-primary pulse" onclick="openQuoteModal()">
+                    <i class="fas fa-calculator"></i> Solicitar Orçamento Grátis
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('services')">
+                    <i class="fas fa-tools"></i> Conheça Nossos Serviços
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Role para baixo</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Quem Somos</span>
+                <h2 class="section-title">Sobre a Broup</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Referência em manutenção e serviços técnicos especializados</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text fade-in-on-scroll">
+                    <p class="about-intro">
+                        A <strong>Broup</strong> é uma empresa diversificada no segmento de manutenção, dedicada a oferecer soluções completas e eficientes para clientes residenciais e corporativos. Com mais de 15 anos de experiência no mercado, nos consolidamos como referência em qualidade e confiabilidade.
+                    </p>
+                    <p class="about-description">
+                        Contamos com uma equipe de profissionais experientes e qualificados nas áreas de elétrica, manutenção predial, ar-condicionado e montagem de computadores. Todos os nossos técnicos são certificados e passam por treinamentos constantes para garantir a excelência em cada serviço prestado.
+                    </p>
+                    <p class="about-description">
+                        Nosso compromisso é garantir excelência em cada serviço prestado, unindo qualidade técnica, segurança e atendimento de alto padrão para superar as expectativas de nossos clientes. Trabalhamos com equipamentos de última geração e seguimos rigorosamente todas as normas técnicas e de segurança.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item fade-in-on-scroll">
+                            <div class="highlight-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Segurança Garantida</h4>
+                                <p>Seguimos rigorosamente as normas NBR5410, NBR5444 e NR10</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item fade-in-on-scroll">
+                            <div class="highlight-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Profissionais Certificados</h4>
+                                <p>Equipe qualificada com certificações técnicas reconhecidas</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item fade-in-on-scroll">
+                            <div class="highlight-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Atendimento Rápido</h4>
+                                <p>Disponibilidade 24/7 para emergências e atendimento ágil</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item fade-in-on-scroll">
+                            <div class="highlight-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Garantia de Qualidade</h4>
+                                <p>Todos os serviços com garantia e suporte pós-atendimento</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Diferenciais</span>
+                <h2 class="section-title">Por Que Escolher a Broup?</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="why-grid">
+                <div class="why-card fade-in-on-scroll">
+                    <div class="why-number">01</div>
+                    <div class="why-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Equipe Especializada</h3>
+                    <p>Profissionais com vasta experiência e certificações nas áreas de atuação, garantindo serviços de alta qualidade</p>
+                </div>
+                <div class="why-card fade-in-on-scroll">
+                    <div class="why-number">02</div>
+                    <div class="why-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Equipamentos Modernos</h3>
+                    <p>Utilizamos ferramentas e equipamentos de última geração para garantir precisão e eficiência</p>
+                </div>
+                <div class="why-card fade-in-on-scroll">
+                    <div class="why-number">03</div>
+                    <div class="why-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Preços Competitivos</h3>
+                    <p>Orçamentos transparentes e justos, com o melhor custo-benefício do mercado</p>
+                </div>
+                <div class="why-card fade-in-on-scroll">
+                    <div class="why-number">04</div>
+                    <div class="why-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Suporte Contínuo</h3>
+                    <p>Atendimento personalizado antes, durante e após a conclusão do serviço</p>
+                </div>
+                <div class="why-card fade-in-on-scroll">
+                    <div class="why-number">05</div>
+                    <div class="why-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Pontualidade</h3>
+                    <p>Respeitamos prazos e horários agendados, valorizando seu tempo</p>
+                </div>
+                <div class="why-card fade-in-on-scroll">
+                    <div class="why-number">06</div>
+                    <div class="why-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Satisfação Garantida</h3>
+                    <p>98% de satisfação dos clientes e garantia em todos os serviços realizados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">O Que Fazemos</span>
+                <h2 class="section-title">Nossos Serviços</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Soluções completas e personalizadas para todas as suas necessidades</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Electrical Services -->
+                <div class="service-card fade-in-on-scroll">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="service-badge-top">
+                            <i class="fas fa-certificate"></i>
+                            <span>NBR Certificado</span>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Serviços Elétricos</h3>
+                    <p class="service-price">A partir de <span>R$ 80</span></p>
+                    <p class="service-description">Instalações, reparos e manutenção elétrica residencial e comercial com certificação NBR5410, NBR5444 e NR10.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Instalação de tomadas e interruptores</li>
+                        <li><i class="fas fa-check"></i> Troca de disjuntores e quadros</li>
+                        <li><i class="fas fa-check"></i> Instalação de luminárias e spots</li>
+                        <li><i class="fas fa-check"></i> Cabeamento elétrico completo</li>
+                        <li><i class="fas fa-check"></i> Manutenção preventiva e corretiva</li>
+                        <li><i class="fas fa-check"></i> Projetos elétricos residenciais</li>
+                    </ul>
+                    <button class="btn btn-service" onclick="openQuoteModal('Serviços Elétricos')">
+                        <i class="fas fa-calculator"></i> Solicitar Orçamento
+                    </button>
+                </div>
+
+                <!-- Construction Services -->
+                <div class="service-card fade-in-on-scroll">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-hard-hat"></i>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Construção Civil</h3>
+                    <p class="service-price">A partir de <span>R$ 80</span></p>
+                    <p class="service-description">Reformas, acabamentos e pequenas obras com qualidade e acabamento impecável.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Pintura residencial e comercial</li>
+                        <li><i class="fas fa-check"></i> Instalação de pisos e azulejos</li>
+                        <li><i class="fas fa-check"></i> Gesso e drywall</li>
+                        <li><i class="fas fa-check"></i> Instalação de portas e janelas</li>
+                        <li><i class="fas fa-check"></i> Reformas completas</li>
+                        <li><i class="fas fa-check"></i> Acabamentos em geral</li>
+                    </ul>
+                    <button class="btn btn-service" onclick="openQuoteModal('Construção Civil')">
+                        <i class="fas fa-calculator"></i> Solicitar Orçamento
+                    </button>
+                </div>
+
+                <!-- Handyman Services -->
+                <div class="service-card fade-in-on-scroll">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-toolbox"></i>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Marido de Aluguel</h3>
+                    <p class="service-price">A partir de <span>R$ 80</span></p>
+                    <p class="service-description">Pequenos reparos e serviços domésticos diversos com agilidade e eficiência.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Montagem de móveis planejados</li>
+                        <li><i class="fas fa-check"></i> Instalação de prateleiras e suportes</li>
+                        <li><i class="fas fa-check"></i> Fixação de quadros e cortinas</li>
+                        <li><i class="fas fa-check"></i> Reparos hidráulicos básicos</li>
+                        <li><i class="fas fa-check"></i> Instalação de chuveiros</li>
+                        <li><i class="fas fa-check"></i> Manutenções gerais</li>
+                    </ul>
+                    <button class="btn btn-service" onclick="openQuoteModal('Marido de Aluguel')">
+                        <i class="fas fa-calculator"></i> Solicitar Orçamento
+                    </button>
+                </div>
+
+                <!-- Air Conditioning -->
+                <div class="service-card fade-in-on-scroll">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Ar Condicionado</h3>
+                    <p class="service-price">A partir de <span>R$ 80</span></p>
+                    <p class="service-description">Instalação, manutenção e reparo de sistemas de climatização de todas as marcas.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Instalação completa split e janela</li>
+                        <li><i class="fas fa-check"></i> Limpeza e higienização</li>
+                        <li><i class="fas fa-check"></i> Carga de gás refrigerante</li>
+                        <li><i class="fas fa-check"></i> Troca de filtros e componentes</li>
+                        <li><i class="fas fa-check"></i> Manutenção preventiva</li>
+                        <li><i class="fas fa-check"></i> Diagnóstico de problemas</li>
+                    </ul>
+                    <button class="btn btn-service" onclick="openQuoteModal('Ar Condicionado')">
+                        <i class="fas fa-calculator"></i> Solicitar Orçamento
+                    </button>
+                </div>
+
+                <!-- PC Assembly -->
+                <div class="service-card fade-in-on-scroll">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Montagem de PCs</h3>
+                    <p class="service-price">A partir de <span>R$ 100</span></p>
+                    <p class="service-description">Montagem, configuração e manutenção de computadores para todas as finalidades.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Montagem completa de PC gamer</li>
+                        <li><i class="fas fa-check"></i> Instalação de sistema operacional</li>
+                        <li><i class="fas fa-check"></i> Configuração de hardware</li>
+                        <li><i class="fas fa-check"></i> Upgrade de componentes</li>
+                        <li><i class="fas fa-check"></i> Manutenção e limpeza</li>
+                        <li><i class="fas fa-check"></i> Consultoria para compra</li>
+                    </ul>
+                    <button class="btn btn-service" onclick="openQuoteModal('Montagem de PCs')">
+                        <i class="fas fa-calculator"></i> Solicitar Orçamento
+                    </button>
+                </div>
+
+                <!-- Project Signature -->
+                <div class="service-card featured fade-in-on-scroll">
+                    <div class="featured-badge">
+                        <i class="fas fa-star"></i> Serviço Premium
+                    </div>
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-file-signature"></i>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Assinatura de Projetos Elétricos</h3>
+                    <p class="service-description">Revisão técnica e assinatura de projetos elétricos conforme normas NBR5410, NBR5444 e NR10. Essencial para aprovação em órgãos competentes e garantia de segurança.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Análise técnica completa</li>
+                        <li><i class="fas fa-check"></i> Adequação às normas vigentes</li>
+                        <li><i class="fas fa-check"></i> Assinatura de engenheiro responsável</li>
+                        <li><i class="fas fa-check"></i> Documentação para aprovação</li>
+                    </ul>
+                    <button class="btn btn-service" onclick="openQuoteModal('Assinatura de Projetos Elétricos')">
+                        <i class="fas fa-calculator"></i> Solicitar Orçamento
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location" id="location">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Onde Estamos</span>
+                <h2 class="section-title">Nossa Localização</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Atendemos toda a região de Campinas e cidades vizinhas</p>
+            </div>
+            <div class="location-content">
+                <div class="location-info fade-in-on-scroll">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Endereço</h3>
+                        <p>Avenida Eduardo Alves de Lima 149<br>Bloco 8, Apto 33<br>Vila Abaeté - Campinas/SP</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Telefone</h3>
+                        <p><a href="tel:+5519989599329">(19) 98959-9329</a></p>
+                        <span class="info-badge">WhatsApp Disponível</span>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:admbroup@gmail.com">admbroup@gmail.com</a></p>
+                        <span class="info-badge">Resposta em 24h</span>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Horário de Atendimento</h3>
+                        <p>Segunda a Sexta: 8h às 18h<br>Sábado e domingo: 8h às 15h<br>Emergências: 24/7</p>
+                    </div>
+                </div>
+                <div class="map-container fade-in-on-scroll">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2!2d-47.0!3d-22.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU0JzAwLjAiUyA0N8KwMDAnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Fale Conosco</span>
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Estamos prontos para atender você da melhor forma</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card fade-in-on-scroll" onclick="window.open('https://wa.me/5519989599329', '_blank')">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Fale conosco agora mesmo</p>
+                    <span class="contact-link">(19) 98959-9329</span>
+                    <div class="contact-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="contact-card fade-in-on-scroll" onclick="window.open('https://instagram.com/broup.manutencao', '_blank')">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Siga-nos e veja nossos trabalhos</p>
+                    <span class="contact-link">@broup.manutencao</span>
+                    <div class="contact-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="contact-card fade-in-on-scroll" onclick="window.location.href='mailto:admbroup@gmail.com'">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Envie uma mensagem detalhada</p>
+                    <span class="contact-link">admbroup@gmail.com</span>
+                    <div class="contact-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/broup.png" alt="Broup Logo">
+                        <span>BROUP</span>
+                    </div>
+                    <p>Soluções completas em manutenção com excelência, segurança e profissionalismo. Sua satisfação é nossa prioridade.</p>
+                    <div class="footer-certifications">
+                        <span><i class="fas fa-certificate"></i> NBR5410</span>
+                        <span><i class="fas fa-certificate"></i> NBR5444</span>
+                        <span><i class="fas fa-certificate"></i> NR10</span>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Início</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> Sobre</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Serviços</a></li>
+                        <li><a href="#why-us"><i class="fas fa-chevron-right"></i> Por Que Escolher</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Serviços Elétricos</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Construção Civil</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Marido de Aluguel</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Ar Condicionado</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Montagem de PCs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> (19) 98959-9329</li>
+                        <li><i class="fas fa-envelope"></i> admbroup@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Vila Abaeté, Campinas/SP</li>
+                        <li><i class="fas fa-clock"></i> Seg-Sex: 8h-18h</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://instagram.com/broup.manutencao" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5519989599329" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:admbroup@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           <div class="footer-bottom">
+            <p>&copy; 2025 Broup Manutenção. Todos os direitos reservados.</p>
+            <p class="footer-dev">
+           Desenvolvido com <i class="fas fa-heart"></i> por 
+            <a href="https://caiodiniz.dev.br/" target="_blank" rel="noopener noreferrer">Caio Diniz</a>!
+          </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div class="modal" id="quoteModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeQuoteModal()">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-calculator"></i>
+                <h2>Solicitar Orçamento Grátis</h2>
+                <p>Preencha o formulário e entraremos em contato rapidamente</p>
+            </div>
+            <form id="quoteForm" onsubmit="submitQuote(event)">
+                <div class="form-group">
+                    <label for="serviceName"><i class="fas fa-tools"></i> Serviço Desejado</label>
+                    <select id="serviceName" required>
+                        <option value="">Selecione um serviço</option>
+                        <option value="Serviços Elétricos">Serviços Elétricos</option>
+                        <option value="Construção Civil">Construção Civil</option>
+                        <option value="Marido de Aluguel">Marido de Aluguel</option>
+                        <option value="Ar Condicionado">Ar Condicionado</option>
+                        <option value="Montagem de PCs">Montagem de PCs</option>
+                        <option value="Assinatura de Projetos Elétricos">Assinatura de Projetos Elétricos</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="clientName"><i class="fas fa-user"></i> Seu Nome</label>
+                        <input type="text" id="clientName" required placeholder="Digite seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="clientPhone"><i class="fas fa-phone"></i> Telefone/WhatsApp</label>
+                        <input type="tel" id="clientPhone" required placeholder="(00) 00000-0000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="clientEmail"><i class="fas fa-envelope"></i> Email</label>
+                    <input type="email" id="clientEmail" required placeholder="seu@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="serviceDescription"><i class="fas fa-comment-alt"></i> Descreva o Serviço</label>
+                    <textarea id="serviceDescription" rows="4" required placeholder="Descreva detalhadamente o serviço que você precisa, incluindo local, urgência e qualquer informação relevante..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-paper-plane"></i> Enviar Solicitação
+                </button>
+                <p class="form-note"><i class="fas fa-info-circle"></i> Responderemos em até 2 horas durante horário comercial</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5519989599329" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Fale Conosco!</span>
+    </a>
+
+        <script>
+    const PAINEL_ADMIN_URL = 'https://caiodiniz-dev.github.io/ADMBroup/';
+
+    function enviarOrcamentoAoAdmin(dados) {
+        console.log('[v0] Enviando orçamento:', dados);
+        
+        try {
+            const iframe = document.createElement('iframe');
+            iframe.name = 'admin-receiver-' + Date.now();
+            iframe.style.display = 'none';
+            document.body.appendChild(iframe);
+            
+            iframe.onload = function() {
+                console.log('[v0] iframe carregado, enviando dados');
+                iframe.contentWindow.postMessage(dados, '*');
+                
+                setTimeout(() => {
+                    try { 
+                        document.body.removeChild(iframe); 
+                    } catch(e) {}
+                }, 2000);
+            };
+            
+            iframe.src = PAINEL_ADMIN_URL + 'receber.html?t=' + Date.now();
+            
+        } catch(erro) {
+            console.error('[v0] Erro:', erro);
+            alert('Erro ao enviar orçamento');
+        }
+    }
+
+    function submitQuote(e) {
+        e.preventDefault();
+
+        const serviceName = document.getElementById("serviceName")?.value || "Serviço";
+        const clientName = document.getElementById("clientName").value;
+        const clientPhone = document.getElementById("clientPhone").value;
+        const clientEmail = document.getElementById("clientEmail").value;
+        const serviceDescription = document.getElementById("serviceDescription").value;
+
+        if (!clientName || !clientPhone || !clientEmail || !serviceDescription) {
+            alert("Preencha todos os campos!");
+            return;
+        }
+
+        const dados = {
+            nome: clientName,
+            email: clientEmail,
+            telefone: clientPhone,
+            mensagem: serviceDescription,
+            servico: serviceName,
+            data: new Date().toISOString()
+        };
+
+        enviarOrcamentoAoAdmin(dados);
+        alert('Orçamento enviado com sucesso!');
+        closeQuoteModal();
+        document.getElementById("quoteForm").reset();
+    }
+</script>
+</body>
+</html>
